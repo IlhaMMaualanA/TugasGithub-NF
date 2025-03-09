@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Gambar</title>
+    <style>
+        body { 
+            text-align: center; 
+            background-color: #2a5298; 
+            color: whitesmoke; 
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            border-radius: 20px;
+        }
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+            gap: 10px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .gallery-container img {
+            width: 100%; /* Lebar 100% dari grid parent */
+            height: 250px; /* Tinggi seragam */
+            object-fit: cover; /* Memastikan gambar tetap proporsional */
+            border-radius: 10px; /* Membuat sudut gambar melengkung */
+            border: 4px solid white; /* Bingkai putih */
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.3); /* Efek bayangan */
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <h2>Galeri Hobby</h2>
+    
+    <div class="gallery-container">
+        <img src="https://1.bp.blogspot.com/-H4sgqb2SMRk/Xqp2jX-8gfI/AAAAAAAAaSM/18mROIFuqOIkF48cegVZOYN2-JZ1dFQVwCLcBGAsYHQ/s1600/fotografi.jpeg" alt="Gambar 1">
+        <img src="https://png.pngtree.com/thumb_back/fw800/background/20230527/pngtree-black-electric-guitar-sits-behind-a-large-torch-image_2658545.jpg" alt="Gambar 2">
+        <img src="https://www.myglobalviewpoint.com/wp-content/uploads/2023/02/Lessons-from-Traveling-Featured-Image.jpg" alt="Gambar 3">
+        <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Gambar 4">
+    </div>
+
+</body>
+</html>

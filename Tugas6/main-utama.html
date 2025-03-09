@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            font-size: 18px;
+        }
+      
+       
+        .container {
+            max-width: 1000px;
+            margin: 80px auto;
+            text-align: center;
+            padding: 20px;
+            list-style: none;
+        }
+        ul li {
+            list-style: none;
+            text-align: left;
+            text-align: center;
+        }
+       
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+        }
+        .card h2 {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .card p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <p> Selamat Datang. Silahkan Baca Penjelasan Singkat Dibawah Ini </p>
+    </div>
+    <div class="container">
+        <h1>Memahami Responsive Web Design</h1>
+        <div class="card">
+            <h2>Apa itu Responsive Web Design?</h2>
+            <p>Responsive Web Design (RWD) adalah teknik desain web yang memungkinkan tampilan website menyesuaikan dengan ukuran layar perangkat yang digunakan. Hal ini penting untuk memastikan pengalaman pengguna tetap optimal di berbagai perangkat seperti komputer, tablet, dan smartphone.</p>
+        </div>
+        <div class="card">
+            <h2>Mengapa Penting?</h2>
+            <p>Dengan semakin banyaknya pengguna internet yang mengakses website melalui perangkat mobile, website yang tidak responsif dapat kehilangan banyak pengunjung. Selain itu, Google juga memberikan peringkat lebih tinggi pada website yang mobile-friendly.</p>
+        </div>
+        <div class="card">
+            <h2>Teknik dalam Responsive Web Design</h2>
+            <p class="list">Beberapa teknik yang digunakan dalam RWD meliputi:</p>
+            <ul>
+                <li>1. Media Queries untuk menyesuaikan gaya berdasarkan ukuran layar.</li>
+                <li>2. Layout fleksibel menggunakan flexbox atau grid.</li>
+                <li>3. Gambar yang responsif agar tidak terlalu besar di perangkat kecil.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
